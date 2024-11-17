@@ -7,7 +7,7 @@ export default function Pricing() {
     <section className="py-24 gap-6 sm:gap-7">
       <SectionHeader heading="Pricing" title="Simple pricing" description="Pricing that fits your needs and helps you scale." />
       <div className="mt-7 grid w-full grid-cols-1 gap-7 lg:grid-cols-3">
-        <div className="relative shadow-lg rounded-xl">
+        <div className="relative shadow-lg rounded-xl bg-white border">
           <div className="divide-y p-0">
             <div className="flex flex-col px-7 py-10 items-center">
               <h4 className="font-heading text-2xl font-semibold text-foreground">Basic</h4>
@@ -18,7 +18,7 @@ export default function Pricing() {
               </div>
               <Button className="mt-10 w-full">Get started</Button>
             </div>
-            <ui className="space-y-2 px-7 py-10">
+            <ul className="space-y-2 px-7 py-10">
               <li className="flex items-center gap-3">
                 <FcApproval />
                 <span className="text-muted-foreground">Unlimited projects</span>
@@ -35,10 +35,10 @@ export default function Pricing() {
                 <FcApproval />
                 <span className="text-muted-foreground">Unlimited projects</span>
               </li>
-            </ui>
+            </ul>
           </div>
         </div>
-        <div className="relative shadow-lg border-2 border-primary rounded-xl">
+        <div className="relative shadow-lg border-2 border-primary bg-white rounded-xl">
           <div className="divide-y p-0">
             <div className="flex flex-col px-7 py-10 items-center">
               <span className="absolute inset-x-0 -top-5 mx-auto w-32 rounded-full bg-primary px-3 py-2  text-center text-sm font-semibold text-primary-foreground shadow-md">Most popular</span>
@@ -50,7 +50,7 @@ export default function Pricing() {
               </div>
               <Button className="mt-10 w-full">Get started</Button>
             </div>
-            <ui className="space-y-2 px-7 py-10">
+            <ul className="space-y-2 px-7 py-10">
               <li className="flex items-center gap-3">
                 <FcApproval />
                 <span className="text-muted-foreground">Unlimited projects</span>
@@ -67,10 +67,10 @@ export default function Pricing() {
                 <FcApproval />
                 <span className="text-muted-foreground">Unlimited projects</span>
               </li>
-            </ui>
+            </ul>
           </div>
         </div>
-        <div className="relative shadow-lg rounded-xl">
+        <div className="relative shadow-lg rounded-xl bg-white border">
           <div className="divide-y p-0">
             <div className="flex flex-col px-7 py-10 items-center">
               <h4 className="font-heading text-2xl font-semibold text-foreground">Basic</h4>
@@ -81,7 +81,7 @@ export default function Pricing() {
               </div>
               <Button className="mt-10 w-full">Get started</Button>
             </div>
-            <ui className="space-y-2 px-7 py-10">
+            <ul className="space-y-2 px-7 py-10">
               <li className="flex items-center gap-3">
                 <FcApproval />
                 <span className="text-muted-foreground">Unlimited projects</span>
@@ -98,7 +98,7 @@ export default function Pricing() {
                 <FcApproval />
                 <span className="text-muted-foreground">Unlimited projects</span>
               </li>
-            </ui>
+            </ul>
           </div>
         </div>
       </div>

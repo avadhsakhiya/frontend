@@ -1,5 +1,7 @@
+'use client'
 import Link from "next/link"
 import { Button } from "./ui/button"
+import auth from "@/store/auth"
 export default function Header() {
     return (
         <header>
@@ -32,9 +34,9 @@ export default function Header() {
                         <li>
                             <Button type="button">
                             <Link
-                                href={'/login'}
+                                href={auth.hasLogin() ? '/dashboard' :'/login'}
                                 rel="noreferrer"
-                            >Get Started</Link>
+                            >{auth.hasLogin() ? 'Go To Dashboard' :'Get Started'}</Link>
                                 </Button>
                         </li>
                     </ul>

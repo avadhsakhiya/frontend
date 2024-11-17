@@ -34,6 +34,7 @@ export default function LoginForm() {
             description: "",
         })
         auth.user = data
+        setCookie('user',JSON.stringify(data),1)
         localStorage.setItem('user',JSON.stringify(data))
         router.push('/dashboard')
     }
