@@ -24,7 +24,7 @@ export default function PostList() {
                         <NewPostModal form />
                     </div>
                    <div className="gap-3 flex flex-col">
-                   {list?.map((e) => {
+                   {/* {list?.map((e) => {
                         return (
                             <div className="bg-white shadow sm:rounded-lg border">
                                 <div className="px-4 py-5 sm:p-6">
@@ -42,7 +42,7 @@ export default function PostList() {
                                 </div>
                             </div>
                         )
-                    })}
+                    })} */}
                    </div>
 
                 </div>
