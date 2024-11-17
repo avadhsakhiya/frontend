@@ -5,8 +5,11 @@ export default {
         if(this.user !== undefined){
           return this.user;
         }
-        const user =  JSON.parse(localStorage.getItem('user'))
-        this.user = user
+
+     if (typeof window !== 'undefined') {
+        const user = localStorage.getItem('user');
+        return user ? JSON.parse(user) : undefined;
+    }
         return this.user
     },
     hasLogin(){

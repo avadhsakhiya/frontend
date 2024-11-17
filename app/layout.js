@@ -16,7 +16,7 @@ const geistSans = localFont({
 export default function RootLayout({ children }) {
   useEffect(()=>{
     auth.getUser()
-  })
+  },[])
   return (
     <html lang="en">
       <body

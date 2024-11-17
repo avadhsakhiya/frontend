@@ -1,10 +1,8 @@
 'use client'
 import auth from "@/store/auth";
-import { Button } from "./ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
 export default function DashboardHeader() {
-    console.log(auth.user);
     const currentUser = auth.getUser()
     return (
         <div>
@@ -48,11 +46,11 @@ export default function DashboardHeader() {
                             <div className="px-2 py-1.5 text-sm">
                                 <h4 className=" font-semibold">{currentUser?.user_name}</h4>
                                 <p className="text-sm font-normal text-muted-foreground">
-                                    {currentUser.email}
+                                    {currentUser?.email}
                                 </p>
                             </div>
 
-                            <div className="relative flex cursor-pointer select-none items-center rounded-sm px-2.5 py-1.5 text-sm outline-none transition-colors focus:bg-primary focus:text-primary-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50" tabindex="-1" data-orientation="vertical" data-radix-collection-item="">
+                            <div className="relative flex cursor-pointer select-none items-center rounded-sm px-2.5 py-1.5 text-sm outline-none transition-colors focus:bg-primary focus:text-primary-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50" tabIndex="-1" data-orientation="vertical" data-radix-collection-item="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-log-out mr-2 size-4">
                                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     <polyline points="16 17 21 12 16 7"></polyline>
@@ -60,7 +58,7 @@ export default function DashboardHeader() {
                                 </svg>
                                 <span>Edit Profile</span>
                             </div>
-                            <div className="relative flex cursor-pointer select-none items-center rounded-sm px-2.5 py-1.5 text-sm outline-none transition-colors focus:bg-primary focus:text-primary-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50" tabindex="-1" data-orientation="vertical" data-radix-collection-item="">
+                            <div className="relative flex cursor-pointer select-none items-center rounded-sm px-2.5 py-1.5 text-sm outline-none transition-colors focus:bg-primary focus:text-primary-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50" tabIndex="-1" data-orientation="vertical" data-radix-collection-item="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-log-out mr-2 size-4">
                                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     <polyline points="16 17 21 12 16 7"></polyline>
